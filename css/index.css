@@ -1,0 +1,218 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.col-md-3{
+    display: flex;
+    justify-content: flex-end;
+}
+.form-group{
+    margin: 0;
+}
+.label-wrap{
+    padding: 20px 0 10px  0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.label-wrap span{
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+}
+.label-wrap span svg{
+    width: 35px;
+    height: 40px;
+    margin: 0;
+    padding: 6px;
+    border: 1px solid #ced4da;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #e9ecef;
+}
+.btn-foto{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 7.5px 0 0 5px;
+    padding: 5px;
+    background: #007bff;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.btn-foto a{
+    color: #ffffff;
+
+}
+.btn-foto a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+#userPhoto{
+    display: none;
+}
+#blah{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+.form-check-label{
+    margin-left: 35px;
+}
+.tag-editor{
+    width: 100%;
+}
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+.btn-primary a,
+.btn-danger a{
+    color: #ffffff;
+}
+.btn-danger{
+    width: 76px;
+    height: 38px;
+    margin-left: 10px;
+}
+.btn-primary a:hover,
+.btn-danger a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+.form-control-name,
+.form-control-birth,
+.form-control-phone,
+.form-control-email,
+.form-control-time,
+.form-control-language{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    border: 1px solid #ced4da;
+}
+.form-control-comment{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+}
+
+.name-empty, .birth-empty,
+.phone-empty, .email-empty,
+.time-empty, .comment-empty{
+    border: 1px solid #ff0000;
+}
+
+
+
+
+.error-name{
+    width: 135px;
+    height: 20px;
+    margin: 10px 0 0 0;
+    padding-left: 7px;
+    display: none;
+    position: absolute;
+    top: 90%;
+    border: 1px solid #ff0000;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.error-phone{
+    width: 105px;
+    height: 20px;
+    margin: 10px 0 0 0;
+    padding-left: 7px;
+    display: none;
+    position: absolute;
+    top: 90%;
+    border: 1px solid #ff0000;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.error-email{
+    width: 95px;
+    height: 20px;
+    margin: 10px 0 0 0;
+    padding-left: 7px;
+    display: none;
+    position: absolute;
+    top: 90%;
+    border: 1px solid #ff0000;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.is-error-name,
+.is-error-email,
+.is-error-phone{
+    display: flex;
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    padding: 45px 0 0 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: auto;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.close {
+    margin: 0 20px 10px 0;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .label-wrap{
+        flex-direction: column;
+    }
+    .label-wrap span{
+        justify-content: center;
+        padding-top: 5px;
+    }
+    .col-md-5{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-danger{
+        margin: 10px 0 0 0;
+    }
+}
